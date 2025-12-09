@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<h1>
-Hola mundo
-</h1>
+	<h1>Hola mundo</h1>
+	
+	<h2>Joyeria Beauty</h2>
 
 </body>
 </html>
