@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesión</title>
+    <title>Registrar</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -19,7 +19,7 @@
     }
   </style>
 
-<body id="login" class="bg-light">
+<body id="register" class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ms-auto gap-2">
                     <li class="nav-item">
                         <a class="btn btn-outline-light" href="login.jsp">
-                            <i class="bi bi-person-circle"></i> Iniciar Sesión
+                            <i class="bi bi-person-circle"></i> Registrar
                         </a>
                     </li>
                     <li class="nav-item">
@@ -54,30 +54,40 @@
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh;">
 
       <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
-        <h2 class="text-center text-dark mb-4">Iniciar Sesión</h2>
+        <h2 class="text-center text-dark mb-4">Crea una cuenta</h2>
 
         <!-- Formulario -->
         <form>
+        
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="email" name="email" class="form-control" placeholder="Ingresa tu nombre" required/>
+          </div>
+        
           <div class="mb-3">
             <label class="form-label">Email</label>
             <input type="email" name="email" class="form-control" placeholder="Ingresa tu email" required/>
           </div>
+          
 
           <div class="mb-3">
-            <label class="form-label">Contraseña</label>
-            <input type="password" name="contraseña" class="form-control" placeholder="Ingresa tu contraseña" required/>
+            <label for="inputPassword5" class="form-label">Contraseña</label>
+			<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+			<div id="passwordHelpBlock" class="form-text">
+			  Tu contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener espacios, caracteres especiales ni emoji.
+			</div>
           </div>
 
           <!-- mensaje error -->
-          <p id="mensajeLogin" class="text-danger"></p>
+          <p id="mensajeRegister" class="text-danger"></p>
 
 
           <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-dark">Entrar</button>
+            <button type="submit" class="btn btn-dark">Registrate</button>
           </div>
 
-			<a href="register.jsp" class="text-dark">Regístrate</a>
-			
+			<a href="login.jsp" class="text-dark">Iniciar Sesión</a>
+
           <div class="text-center">
             <a href="index.jsp" class="text-decoration-none text-dark">← Volver al inicio</a>
           </div>
