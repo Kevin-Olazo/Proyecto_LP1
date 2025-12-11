@@ -8,10 +8,12 @@ public class Usuario {
 	private String contraseña;
 	private String rol;
 	
+	// Constructor vacio
 	public Usuario() {
 		
 	}
-
+	
+	// Constructor con parametros
 	public Usuario(int idUsuario, String nombres, String apellidos, String correo, String contraseña, String rol) {
 		this.idUsuario = idUsuario;
 		this.nombres = nombres;
@@ -20,6 +22,8 @@ public class Usuario {
 		this.contraseña = contraseña;
 		this.rol = rol;
 	}
+	
+	// GETTERS Y SETTERS
 
 	public int getIdUsuario() {
 		return idUsuario;
