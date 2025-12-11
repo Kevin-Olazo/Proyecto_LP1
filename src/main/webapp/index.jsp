@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,7 +13,6 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
-/* Un poco de CSS extra para darle toque de joyería */
 body {
 	background-color: #f8f9fa;
 }
@@ -25,14 +23,14 @@ body {
 }
 
 .card-img-top {
-	height: 250px; /* Altura fija para que todas las cartas sean iguales */
-	object-fit: cover; /* Recorta la imagen si no encaja, sin deformarla */
+	height: 250px; 
+	object-fit: cover; 
 	background-color: #e9ecef;
 }
 
 .precio {
 	font-size: 1.2rem;
-	color: #198754; /* Verde éxito de Bootstrap */
+	color: #198754; 
 	font-weight: bold;
 }
 
